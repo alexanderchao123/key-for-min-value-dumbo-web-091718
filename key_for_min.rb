@@ -5,10 +5,11 @@ def key_for_min_value(name_hash)
   return nil if name_hash.empty?
 
   key = ""
+  max = 0
   name_hash.each do |name, value|
-    # if value < min
-    #   min = value
-    #   key = name
+    if value > max
+      max = value
+      key = name
     end
   return key
 end
