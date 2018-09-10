@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
       max = value
       key = name
     end
+  end
   return key
 end
 
